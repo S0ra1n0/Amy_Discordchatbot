@@ -61,7 +61,7 @@ def tellTime():
         d1 = (day_of_the_week + ", " + time[0:10] + " " + time[11:-1] + " (GMT +0)")
      
     return (d1)
-
+'''
 def MinRNG(message: str) -> str:
     mi = message.lower()
     while (mi == ''):
@@ -72,7 +72,7 @@ def MaxRNG(message: str) -> str:
     while (ma == ''):
         continue
     return ma
-
+'''
 
 runner = 0
 topic = ""
@@ -99,13 +99,6 @@ def get_response(message: str) -> str:
             return ("2 dices roll: " + str(random.randint(1, 12)))
 
         if '!1dice' in chat:
-            '''
-            while(True):
-                mini = MinRNG()
-                maxi = MaxRNG()
-                break
-            se = ("Random number: ", random.randint(mini, maxi))
-            '''
             return ("1 dice roll: " + str(random.randint(1, 6)))
 
         if "your name" in chat:
